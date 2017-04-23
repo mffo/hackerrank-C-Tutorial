@@ -5,22 +5,23 @@ using namespace std;
 
 int max_of_four(int a, int b, int c, int d)
 {
-    int greatest;
-    greatest = a;
-    if(greatest < b){
-        greatest = b;
-        if(greatest < c){
-            greatest = c;
-            if(greatest < d)
-            {
-                greatest = d;
-            }
-        }
+    int maior;
+    maior = a;
+    if(b >= maior){
+        maior = b;
+    }
+    if(c >=maior)
+    {
+        maior = c;
+    }
+    if(d>=maior)
+    {
+       maior = d; 
     }
 
     
     
-    return greatest;
+    return maior;
 }
 
 
